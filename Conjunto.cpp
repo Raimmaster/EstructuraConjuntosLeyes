@@ -36,6 +36,17 @@ bool Conjunto::insertar(NLegisladores *n){
     return true;
 }
 
+NLegisladores* Conjunto::buscar(int id){
+    while(actual){
+        if(actual->id == id)
+            return actual;
+
+        actual = actual->siguiente;
+    }
+
+    return NULL;
+}
+
 bool Conjunto::suprimir(int id){
     actual = inicio;
     if(actual->id == id){
@@ -58,12 +69,8 @@ bool Conjunto::suprimir(int id){
 }
 
 bool Conjunto::isMiembro(int id){
-    while(actual){
-        if(actual->id == id)
-            return true;
-
-        actual = actual->siguiente;
-    }
+    if(buscar(id))
+        return true;
 
     return false;
 }

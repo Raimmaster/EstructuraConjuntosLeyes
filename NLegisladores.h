@@ -9,7 +9,7 @@ public:
     int id;
     NLegisladores* siguiente;
     bool isBueno;
-    NLegisladores();
+    NLegisladores(int id);
 };
 
 #endif // NLEGISLADORES_H

@@ -9,6 +9,7 @@ public:
     NLegisladores* actual;
     NLegisladores* inicio;
     Conjunto();
+    NLegisladores* buscar(int id);
     bool insertar(NLegisladores* n);
     bool suprimir(int id);
     bool isMiembro(int id);

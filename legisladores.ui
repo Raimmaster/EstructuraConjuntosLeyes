@@ -286,7 +286,7 @@
       <string>Ley:</string>
      </property>
     </widget>
-    <widget class="QListWidget" name="lwLey">
+    <widget class="QListWidget" name="lwLeyes">
      <property name="geometry">
       <rect>
        <x>50</x>
