@@ -49,6 +49,9 @@ NLegisladores* Conjunto::buscar(int id){
 
 bool Conjunto::suprimir(int id){
     actual = inicio;
+    if (!actual)
+        return false;
+
     if(actual->id == id){
         inicio = actual->siguiente;
         delete actual;

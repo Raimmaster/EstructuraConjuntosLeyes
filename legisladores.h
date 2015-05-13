@@ -22,6 +22,7 @@ public:
     Conjunto legisladores, legisladoresBuenos, legisladoresMalos;
     vector<Ley*> leyes;
     void unirBuenosLegisladores();
+    int getPosInListOne(int id);
     ~Legisladores();
 
 private slots:

@@ -30,9 +30,18 @@ void Legisladores::on_bInsertar_clicked()
     ui->tId->clear();
 
     QString q = QString("%1").arg(id);
-    cout<<id<<endl;
     legisladores.insertar(new NLegisladores(id));
     ui->lwLegis->addItem(q);
+}
+
+int Legisladores::getPosInListOne(int id){
+    int pos = -1;
+
+    for(int i = 0; i < ui->lwLegis->count(); i++){
+        if(ui->lwLegis->item(i)->text().toInt() == id)
+            return i;
+    }
+    return pos;
 }
 
 void Legisladores::on_bSuprimir_clicked()
@@ -43,6 +52,12 @@ void Legisladores::on_bSuprimir_clicked()
     legisladores.suprimir(id);
     legisladoresBuenos.suprimir(id);
     legisladoresMalos.suprimir(id);
+
+    int posD = getPosInListOne(id);
+
+    if(posD != -1)
+        ui->lwLegis->takeItem(posD);
+
 }
 
 void Legisladores::on_bIsMember_clicked()
