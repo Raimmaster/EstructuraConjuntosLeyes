@@ -3,4 +3,5 @@
 NLegisladores::NLegisladores()
 {
     this->siguiente = NULL;
+    this->isBueno = true;
 }

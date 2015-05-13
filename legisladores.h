@@ -2,6 +2,8 @@
 #define LEGISLADORES_H
 
 #include <QMainWindow>
+#include "Conjunto.h"
+#include <QMessageBox>
 
 namespace Ui {
 class Legisladores;
@@ -13,6 +15,7 @@ class Legisladores : public QMainWindow
 
 public:
     explicit Legisladores(QWidget *parent = 0);
+    void unirBuenosLegisladores();
     ~Legisladores();
 
 private:

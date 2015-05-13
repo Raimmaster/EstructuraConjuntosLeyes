@@ -64,4 +64,6 @@ bool Conjunto::isMiembro(int id){
 
         actual = actual->siguiente;
     }
+
+    return false;
 }

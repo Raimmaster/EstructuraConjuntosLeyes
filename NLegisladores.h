@@ -8,6 +8,7 @@ class NLegisladores
 public:
     int id;
     NLegisladores* siguiente;
+    bool isBueno;
     NLegisladores();
 };
 
