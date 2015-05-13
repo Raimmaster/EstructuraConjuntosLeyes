@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         legisladores.cpp \
     NLegisladores.cpp \
-    Conjunto.cpp
+    Conjunto.cpp \
+    Ley.cpp
 
 HEADERS  += legisladores.h \
     NLegisladores.h \
-    Conjunto.h
+    Conjunto.h \
+    Ley.h
 
 FORMS    += legisladores.ui

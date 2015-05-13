@@ -13,3 +13,8 @@ Legisladores::~Legisladores()
     delete ui;
 }
 
+
+void Legisladores::on_bCrear_clicked()
+{
+
+}
