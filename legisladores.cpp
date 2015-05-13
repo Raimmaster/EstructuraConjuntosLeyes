@@ -12,3 +12,4 @@ Legisladores::~Legisladores()
 {
     delete ui;
 }
+
